@@ -4,7 +4,6 @@
 <html lang="en-US"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="telephone=no" name="format-detection"/>
-
 <meta content="viewport-fit=cover, width=device-width, initial-scale=1" name="viewport"/>
 <script type="text/javascript">
 (function () {
@@ -22,15 +21,6 @@
         appendMetaTagAttributes("viewport", "content", ["user-scalable=no", "minimum-scale=1.0"]);
     }
 })();</script>
-
-
-
-
-
-
-
-
-
 <link href="https://hatahata.outsystemscloud.com/DonderNote/favicon.png" rel="shortcut icon" type="image/x-icon"/><title>全良難易度表</title><style id="dn-table-background-white">
 /* Only the difficulty table's faint blue base fill changes to white.
    The lane title colors and the existing marked-song/status fills stay as-is. */
@@ -117,6 +107,38 @@ border:1px solid #263e64}
 </style><style id="dn-hairline-only">
 #APListContainer{border-top:none!important;box-shadow:none!important;outline:none!important}
 #Lv10ListItem{border-top:none!important;box-shadow:none!important;outline:none!important}
+</style>
+<style id="dn-lane-gap-mobile-density">/* Keep every original lane cell border; add about 1 mm (4 CSS px) of white space
+   between whole difficulty lanes, not just the label. */
+#Lv10ListItem > [id$="-MainContainer"] + [id$="-MainContainer"] {
+  margin-top: 4px !important;
+}
+
+/* Phone screens: keep almost the desktop number of songs visible across a row.
+   Shrink table tiles only; leave controls, title and desktop layout untouched. */
+@media (max-width: 680px) {
+  #Lv10ListItem { font-size: clamp(6px, 1.7vw, 8px); }
+  #Lv10ListItem .ListItem-Title {
+    width: 7% !important;
+    min-height: 20px;
+    padding: 1px 0;
+    font-size: clamp(7px, 1.9vw, 9px);
+    line-height: 1.15;
+  }
+  #Lv10ListItem .ListItem-Gallary { width: 93% !important; }
+  #Lv10ListItem .list-group {
+    grid-template-columns: repeat(13, minmax(0, 1fr)) !important;
+    min-height: 20px;
+  }
+  #Lv10ListItem .ListItem-TextForCommon {
+    min-height: 20px;
+    padding: 1px;
+    font-size: clamp(6px, 1.7vw, 8px);
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
 </style></head>
 <body class="windows chrome is--touch is-ltr desktop landscape">
 <div id="reactContainer"><div id="transitionContainer"><div class="active-screen screen-container fade-enter-done"><div class="OSBlockWidget" data-block="Common.DonderNoteCommon" id="$b1"></div><div class="OSBlockWidget" data-block="Layouts.LayoutTopMenu" id="$b2"><div class="layout layout-top fixed-header" data-container="" id="b2-LayoutWrapper"><div class="main" data-container=""><header class="header" data-advancedhtml="" id="b2-Header2" role="banner"><a aria-label="Skip to Content (Press Enter)" class="skip-nav" data-link="" data-showskipcontent="false" href="https://hatahata.outsystemscloud.com/DonderNote/Lv10List#b2-MainContentWrapper">Skip to Content (Press Enter)</a><div class="header-top ThemeGrid_Container" data-container=""><div class="header-content display-flex" data-container=""><div class="OSBlockWidget" data-block="Common.MenuIcon" id="b2-$b1"><div aria-haspopup="true" aria-label="Toggle the Menu" class="menu-icon" data-container="" role="button" style="cursor: pointer;" tabindex="0"><div aria-hidden="true" class="menu-icon-line" data-container=""></div><div aria-hidden="true" class="menu-icon-line" data-container=""></div><div aria-hidden="true" class="menu-icon-line" data-container=""></div></div></div><div class="OSBlockWidget" data-block="Common.ApplicationTitle" id="b2-$b2"><div class="application-name display-flex align-items-center full-height" data-container="" id="b2-b2-ApplicationTitleWrapper" role="button" style="cursor: pointer;" tabindex="0"><img alt="" class="app-logo" data-image="" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" style="margin-left: 0px; margin-right: 0px; padding: 0px;"/><label class="OSFillParent" data-label=""><span class="DonderNote-Text-Mid">ドンだーノート</span></label></div></div><div class="header-navigation OSInline" id="b2-Header"><div class="OSBlockWidget" data-block="Common.DonderNoteMenu" id="$b3"><nav class="app-menu-content display-flex" data-advancedhtml="" id="b3-MenuContainer" role="navigation"><div class="header-logo ph" data-container=""><div class="OSBlockWidget" data-block="Common.ApplicationTitle" id="b3-$b1"><div class="application-name display-flex align-items-center full-height" data-container="" id="b3-b1-ApplicationTitleWrapper" role="button" style="cursor: pointer;" tabindex="0"><img alt="" class="app-logo" data-image="" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" style="margin-left: 0px; margin-right: 0px; padding: 0px;"/><label class="OSFillParent" data-label=""><span class="DonderNote-Text-Mid">ドンだーノート</span></label></div></div></div></nav><div class="app-menu-overlay" data-container="" role="button" style="cursor: pointer;"></div></div></div></div></div></header><div class="content" data-container="" id="b2-Content"><div class="main-content ThemeGrid_Container" data-container="" id="b2-MainContentWrapper" role="main"><div class="content-breadcrumbs ph" id="b2-Breadcrumbs"></div><div class="content-top display-flex align-items-center" data-container=""><div class="content-top-title heading1 ph" id="b2-Title"></div><div class="content-top-actions ph" id="b2-Actions"></div></div><div class="content-middle" id="b2-MainContent"><div class="OSBlockWidget" data-block="MainFlow.Html2Image" id="$b4"></div><div class="DonderNote-BackGround ContainerForm" data-container="" id="DispModeContainer"><div data-container="" id="DisplayConfigContainer"><span class="DonderNote-Text-Mid">表示形式：</span><div data-container="" style="text-align: center;"><div aria-activedescendant="ButtonGroupItem1" class="button-group" data-button-group="" id="ButtonGroup1" role="radiogroup"><div><button aria-checked="true" class="button-group-item button-group-selected-item" data-button-group-item="" id="ButtonGroupItem1" role="radio">テキスト形式</button><button aria-checked="false" class="button-group-item" data-button-group-item="" id="ButtonGroupItem2" role="radio">画像形式</button></div></div></div></div></div><div class="DonderNote-BackGround ContainerForm" data-container="" id="UpdateContainer"><div data-container="" id="IsDisplayStatusForRegistContainer" style="text-align: center;"></div><div data-container="" id="UpdateBottonContainer" style="text-align: center; margin-top: 10px;"><div class="OSBlockWidget" data-block="Utilities.DEPRECATED_ButtonLoading" id="$b12"><div aria-atomic="true" aria-label="" aria-live="polite" class="osui-deprecated OSInline" id="b12-Button" role=""><button class="btn btn-primary OSFillParent" data-button="" disabled="" type="button"><div class="btn-loading margin-right-s OSInline" data-container=""><div aria-hidden="true" class="loading-spinner" data-container=""></div></div><div class="btn-label OSInline" data-container="">各ステータスの一括更新</div></button></div></div></div></div><div data-container="" id="LodingContainer2"></div><div data-container="" id="MainDataContainer"><span class="DonderNote-Text-Small bold" data-expression="" id="lblTitleForAPList">太鼓の達人 ☆10全良難易度表参考Ver20260801</span><div class="RightContent" data-container="" id="DateContainer"><span class="DonderNote-Text-Small" data-expression="" id="lblDispDate3" style="margin-left: 0px;">2026/10/19</span></div><div data-container="" id="APListContainer"><div class="ListItem OSFillParent" data-list="" id="Lv10ListItem" style="overflow: hidden; font-size: 10px; position: relative;"><script style="display: flex; height: 0px; width: 100%;"></script><div data-container="" id="l6-19_0-MainContainer" style="display: flex; flex-wrap: nowrap;"><div class="ListItem-Title OSInline" data-container="" style="text-align: center; width: 5%; float: left;"><span data-expression="">SS</span></div><div class="ListItem-Gallary OSInline" data-container="" style="width: 95%; float: left;"><div class="OSBlockWidget" data-block="Adaptive.DEPRECATED_GalleryV2" id="l6-19_0-$b13"><div class="osui-deprecated grid-gallery" id="l6-19_0-b13-Content" style="--grid-desktop: 12; --grid-tablet: 12; --grid-phone: 12; --grid-gap: var(--space-none); --grid-list-desktop: 13; --grid-list-tablet: 13; --grid-list-phone: 13;"><div class="list list-group OSFillParent" data-animation-disabled="" data-list="" data-virtualization-disabled="" disable-virtualization="True" style="overflow-x: auto; white-space: nowrap;"><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_0-MusicNameContainer"><span class="OSFillParent" data-expression="">Infinite Rebellion</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_1-MusicNameContainer"><span class="OSFillParent" data-expression="">彁（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_2-MusicNameContainer"><span class="OSFillParent" data-expression="">CRUXNAUT</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_3-MusicNameContainer"><span class="OSFillParent" data-expression="">The Future of the 太鼓ドラム（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_4-MusicNameContainer"><span class="OSFillParent" data-expression="">神竜 ～Shinryu～（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_5-MusicNameContainer"><span class="OSFillParent" data-expression="">憎悪と醜悪の花束（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_6-MusicNameContainer"><span class="OSFillParent" data-expression="">ダーク・エクス・マキナ♡</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_7-MusicNameContainer"><span class="OSFillParent" data-expression="">ダーク・エクス・マキナ！（まきなVer）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_8-MusicNameContainer"><span class="OSFillParent" data-expression="">第六天魔王（表）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_9-MusicNameContainer"><span class="OSFillParent" data-expression="">第六天魔王（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_10-MusicNameContainer"><span class="OSFillParent" data-expression="">ダンガンノーツ（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_11-MusicNameContainer"><span class="OSFillParent" data-expression="">Destination 2F29</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_12-MusicNameContainer"><span class="OSFillParent" data-expression="">ドンカマ2000</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_13-MusicNameContainer"><span class="OSFillParent" data-expression="">23時54分、陽の旅路へのプレリュード（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_14-MusicNameContainer"><span class="OSFillParent" data-expression="">Vixtory（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_15-MusicNameContainer"><span class="OSFillParent" data-expression="">vs.VIGVANGS（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_16-MusicNameContainer"><span class="OSFillParent" data-expression="">poxei♦DOON</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_17-MusicNameContainer"><span class="OSFillParent" data-expression="">幽玄ノ乱</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_18-MusicNameContainer"><span class="OSFillParent" data-expression="">Rough: CHA0Z</span></div></div></div></div></div></div><div data-container="" id="l6-19_1-MainContainer" style="display: flex; flex-wrap: nowrap;"><div class="ListItem-Title OSInline" data-container="" style="text-align: center; width: 5%; float: left;"><span data-expression="">地力
@@ -143,7 +165,6 @@ F</span></div><div class="ListItem-Gallary OSInline" data-container="" style="wi
 集計対象外譜面：削除済　限定　
 難易度表考案　：teamPGX（※並び順：譜面名順）</span></div><div data-container="" id="ExContainer"><span data-expression="" id="ExLabel">凡例　　　　　：</span><span class="ListItem-TextForIsAP" data-expression="" id="Ex1" style="width: 50px;">全　　良</span><span class="ListItem-TextForKaAri" data-expression="" id="Ex2" style="width: 50px; margin-left: 5px;">可１～９</span><span class="ListItem-TextForFullComb" data-expression="" id="Ex3" style="width: 50px; margin-left: 5px;">フルコン</span><span class="ListItem-TextForClear" data-expression="" id="Ex4" style="width: 50px; margin-left: 5px;">ク リ ア</span><span class="ListItem-TextForIsDelete" data-expression="" id="Ex5" style="width: 50px; margin-left: 5px;">対 象 外</span></div></div></div><div data-container="" id="SourceContainer" style="text-align: right;"><div class="RightContent" data-container="" id="LinkContainer" style="text-align: right;"><a data-link="" href="https://x.com/_fuyoshi/status/2083362870361034780" target="_blank"><span class="DonderNote-Url OSFillParent" data-expression="" style="font-size: 10px;">ソース(Twitter)はこちら</span></a></div></div></div></div><footer class="content-bottom" data-advancedhtml="" role="contentinfo"><div class="footer ThemeGrid_Container ph" id="b2-Footer"></div></footer></div></div></div></div></div></div></div>
 <noscript><span>JavaScript is required</span></noscript>
-
 <script id="dn-local-editor-addon">
 /* Add-on editor for the user-provided HTML. Does not restyle the original site. */
 (() => {
