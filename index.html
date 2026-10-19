@@ -169,7 +169,70 @@ border:1px solid #263e64}
   }
 }
 </style>
-</head>
+<style id="dn-compact-original-like-mobile">
+/* Align the phone chart with the original site's compact twelve-column rows.
+   The user-selected theme, white unfilled backgrounds, lane gaps, and all
+   editing and saving controls remain unchanged. Desktop CSS is untouched. */
+@media (max-width: 680px) {
+  #Lv10ListItem .ListItem-Title {
+    width: 5.5% !important;
+    flex: 0 0 5.5% !important;
+    min-height: 21px;
+    padding: 0 1px;
+    font-size: clamp(6px, 1.7vw, 8px) !important;
+    font-weight: 700;
+    line-height: 1.25;
+    /* Restore visible row bounds, without doubling adjacent borders. */
+    border: 1px solid #3169b6;
+  }
+  #Lv10ListItem .ListItem-Gallary {
+    width: 94.5% !important;
+    flex: 0 0 94.5% !important;
+  }
+  #Lv10ListItem .list-group {
+    grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+    background: #fff;
+    border-top: 1px solid #3169b6;
+    border-left: 1px solid #3169b6;
+    min-height: 21px;
+  }
+  #Lv10ListItem .ListItem-TextForCommon {
+    min-height: 21px !important;
+    padding: 1px 0 !important;
+    border: 0 !important;
+    border-right: 1px solid #3169b6 !important;
+    border-bottom: 1px solid #3169b6 !important;
+    color: #2156a3;
+    font-weight: 650;
+    line-height: 1.16 !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #Lv10ListItem .ListItem-TextForCommon > span {
+    color: inherit;
+    font-weight: 650 !important;
+    font-size: var(--dn-song-mobile-size, 6px) !important;
+    line-height: 1.16 !important;
+    text-align: left;
+    overflow-wrap: anywhere !important;
+    letter-spacing: 0 !important;
+    /* Preserve the song title's original natural line wrapping. */
+    word-break: normal !important;
+  }
+  /* Existing custom color choices still control labels, fill, and borders. */
+  html.dn-user-theme #Lv10ListItem .list-group {
+    border-top-color: var(--dn-user-theme-color) !important;
+    border-left-color: var(--dn-user-theme-color) !important;
+  }
+  html.dn-user-theme #Lv10ListItem .ListItem-TextForCommon {
+    border-right-color: var(--dn-user-theme-color) !important;
+    border-bottom-color: var(--dn-user-theme-color) !important;
+  }
+  html.dn-user-theme #Lv10ListItem .ListItem-Title {
+    border-color: var(--dn-user-theme-color) !important;
+  }
+}
+</style></head>
 <body class="windows chrome is--touch is-ltr desktop landscape">
 <div id="reactContainer"><div id="transitionContainer"><div class="active-screen screen-container fade-enter-done"><div class="OSBlockWidget" data-block="Common.DonderNoteCommon" id="$b1"></div><div class="OSBlockWidget" data-block="Layouts.LayoutTopMenu" id="$b2"><div class="layout layout-top fixed-header" data-container="" id="b2-LayoutWrapper"><div class="main" data-container=""><header class="header" data-advancedhtml="" id="b2-Header2" role="banner"><a aria-label="Skip to Content (Press Enter)" class="skip-nav" data-link="" data-showskipcontent="false" href="https://hatahata.outsystemscloud.com/DonderNote/Lv10List#b2-MainContentWrapper">Skip to Content (Press Enter)</a><div class="header-top ThemeGrid_Container" data-container=""><div class="header-content display-flex" data-container=""><div class="OSBlockWidget" data-block="Common.MenuIcon" id="b2-$b1"><div aria-haspopup="true" aria-label="Toggle the Menu" class="menu-icon" data-container="" role="button" style="cursor: pointer;" tabindex="0"><div aria-hidden="true" class="menu-icon-line" data-container=""></div><div aria-hidden="true" class="menu-icon-line" data-container=""></div><div aria-hidden="true" class="menu-icon-line" data-container=""></div></div></div><div class="OSBlockWidget" data-block="Common.ApplicationTitle" id="b2-$b2"><div class="application-name display-flex align-items-center full-height" data-container="" id="b2-b2-ApplicationTitleWrapper" role="button" style="cursor: pointer;" tabindex="0"><img alt="" class="app-logo" data-image="" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" style="margin-left: 0px; margin-right: 0px; padding: 0px;"/><label class="OSFillParent" data-label=""><span class="DonderNote-Text-Mid">ドンだーノート</span></label></div></div><div class="header-navigation OSInline" id="b2-Header"><div class="OSBlockWidget" data-block="Common.DonderNoteMenu" id="$b3"><nav class="app-menu-content display-flex" data-advancedhtml="" id="b3-MenuContainer" role="navigation"><div class="header-logo ph" data-container=""><div class="OSBlockWidget" data-block="Common.ApplicationTitle" id="b3-$b1"><div class="application-name display-flex align-items-center full-height" data-container="" id="b3-b1-ApplicationTitleWrapper" role="button" style="cursor: pointer;" tabindex="0"><img alt="" class="app-logo" data-image="" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" style="margin-left: 0px; margin-right: 0px; padding: 0px;"/><label class="OSFillParent" data-label=""><span class="DonderNote-Text-Mid">ドンだーノート</span></label></div></div></div></nav><div class="app-menu-overlay" data-container="" role="button" style="cursor: pointer;"></div></div></div></div></div></header><div class="content" data-container="" id="b2-Content"><div class="main-content ThemeGrid_Container" data-container="" id="b2-MainContentWrapper" role="main"><div class="content-breadcrumbs ph" id="b2-Breadcrumbs"></div><div class="content-top display-flex align-items-center" data-container=""><div class="content-top-title heading1 ph" id="b2-Title"></div><div class="content-top-actions ph" id="b2-Actions"></div></div><div class="content-middle" id="b2-MainContent"><div class="OSBlockWidget" data-block="MainFlow.Html2Image" id="$b4"></div><div class="DonderNote-BackGround ContainerForm" data-container="" id="DispModeContainer"><div data-container="" id="DisplayConfigContainer"><span class="DonderNote-Text-Mid">表示形式：</span><div data-container="" style="text-align: center;"><div aria-activedescendant="ButtonGroupItem1" class="button-group" data-button-group="" id="ButtonGroup1" role="radiogroup"><div><button aria-checked="true" class="button-group-item button-group-selected-item" data-button-group-item="" id="ButtonGroupItem1" role="radio">テキスト形式</button><button aria-checked="false" class="button-group-item" data-button-group-item="" id="ButtonGroupItem2" role="radio">画像形式</button></div></div></div></div></div><div class="DonderNote-BackGround ContainerForm" data-container="" id="UpdateContainer"><div data-container="" id="IsDisplayStatusForRegistContainer" style="text-align: center;"></div><div data-container="" id="UpdateBottonContainer" style="text-align: center; margin-top: 10px;"><div class="OSBlockWidget" data-block="Utilities.DEPRECATED_ButtonLoading" id="$b12"><div aria-atomic="true" aria-label="" aria-live="polite" class="osui-deprecated OSInline" id="b12-Button" role=""><button class="btn btn-primary OSFillParent" data-button="" disabled="" type="button"><div class="btn-loading margin-right-s OSInline" data-container=""><div aria-hidden="true" class="loading-spinner" data-container=""></div></div><div class="btn-label OSInline" data-container="">各ステータスの一括更新</div></button></div></div></div></div><div data-container="" id="LodingContainer2"></div><div data-container="" id="MainDataContainer"><span class="DonderNote-Text-Small bold" data-expression="" id="lblTitleForAPList">太鼓の達人 ☆10全良難易度表参考Ver20260801</span><div class="RightContent" data-container="" id="DateContainer"><span class="DonderNote-Text-Small" data-expression="" id="lblDispDate3" style="margin-left: 0px;">2026/10/19</span></div><div data-container="" id="APListContainer"><div class="ListItem OSFillParent" data-list="" id="Lv10ListItem" style="overflow: hidden; font-size: 10px; position: relative;"><script style="display: flex; height: 0px; width: 100%;"></script><div data-container="" id="l6-19_0-MainContainer" style="display: flex; flex-wrap: nowrap;"><div class="ListItem-Title OSInline" data-container="" style="text-align: center; width: 5%; float: left;"><span data-expression="">SS</span></div><div class="ListItem-Gallary OSInline" data-container="" style="width: 95%; float: left;"><div class="OSBlockWidget" data-block="Adaptive.DEPRECATED_GalleryV2" id="l6-19_0-$b13"><div class="osui-deprecated grid-gallery" id="l6-19_0-b13-Content" style="--grid-desktop: 12; --grid-tablet: 12; --grid-phone: 12; --grid-gap: var(--space-none); --grid-list-desktop: 13; --grid-list-tablet: 13; --grid-list-phone: 13;"><div class="list list-group OSFillParent" data-animation-disabled="" data-list="" data-virtualization-disabled="" disable-virtualization="True" style="overflow-x: auto; white-space: nowrap;"><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_0-MusicNameContainer"><span class="OSFillParent" data-expression="">Infinite Rebellion</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_1-MusicNameContainer"><span class="OSFillParent" data-expression="">彁（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_2-MusicNameContainer"><span class="OSFillParent" data-expression="">CRUXNAUT</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_3-MusicNameContainer"><span class="OSFillParent" data-expression="">The Future of the 太鼓ドラム（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_4-MusicNameContainer"><span class="OSFillParent" data-expression="">神竜 ～Shinryu～（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_5-MusicNameContainer"><span class="OSFillParent" data-expression="">憎悪と醜悪の花束（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_6-MusicNameContainer"><span class="OSFillParent" data-expression="">ダーク・エクス・マキナ♡</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_7-MusicNameContainer"><span class="OSFillParent" data-expression="">ダーク・エクス・マキナ！（まきなVer）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_8-MusicNameContainer"><span class="OSFillParent" data-expression="">第六天魔王（表）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_9-MusicNameContainer"><span class="OSFillParent" data-expression="">第六天魔王（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_10-MusicNameContainer"><span class="OSFillParent" data-expression="">ダンガンノーツ（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_11-MusicNameContainer"><span class="OSFillParent" data-expression="">Destination 2F29</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_12-MusicNameContainer"><span class="OSFillParent" data-expression="">ドンカマ2000</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_13-MusicNameContainer"><span class="OSFillParent" data-expression="">23時54分、陽の旅路へのプレリュード（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_14-MusicNameContainer"><span class="OSFillParent" data-expression="">Vixtory（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_15-MusicNameContainer"><span class="OSFillParent" data-expression="">vs.VIGVANGS（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_16-MusicNameContainer"><span class="OSFillParent" data-expression="">poxei♦DOON</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_17-MusicNameContainer"><span class="OSFillParent" data-expression="">幽玄ノ乱</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_0-l6-20_18-MusicNameContainer"><span class="OSFillParent" data-expression="">Rough: CHA0Z</span></div></div></div></div></div></div><div data-container="" id="l6-19_1-MainContainer" style="display: flex; flex-wrap: nowrap;"><div class="ListItem-Title OSInline" data-container="" style="text-align: center; width: 5%; float: left;"><span data-expression="">地力
 S+</span></div><div class="ListItem-Gallary OSInline" data-container="" style="width: 95%; float: left;"><div class="OSBlockWidget" data-block="Adaptive.DEPRECATED_GalleryV2" id="l6-19_1-$b13"><div class="osui-deprecated grid-gallery" id="l6-19_1-b13-Content" style="--grid-desktop: 12; --grid-tablet: 12; --grid-phone: 12; --grid-gap: var(--space-none); --grid-list-desktop: 13; --grid-list-tablet: 13; --grid-list-phone: 13;"><div class="list list-group OSFillParent" data-animation-disabled="" data-list="" data-virtualization-disabled="" disable-virtualization="True" style="overflow-x: auto; white-space: nowrap;"><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_0-MusicNameContainer"><span class="OSFillParent" data-expression="">!!!カオスタイム!!!</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_1-MusicNameContainer"><span class="OSFillParent" data-expression="">†††カオスタイム the DARK†††</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_2-MusicNameContainer"><span class="OSFillParent" data-expression="">Calamity Fortune（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_3-MusicNameContainer"><span class="OSFillParent" data-expression="">業 -善なる神とこの世の悪について-（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_4-MusicNameContainer"><span class="OSFillParent" data-expression="">最果の魔法使い（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_5-MusicNameContainer"><span class="OSFillParent" data-expression="">siren's eye</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_6-MusicNameContainer"><span class="OSFillParent" data-expression="">疾風怒濤（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_7-MusicNameContainer"><span class="OSFillParent" data-expression="">Central Dogma Pt.1（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_8-MusicNameContainer"><span class="OSFillParent" data-expression="">魑魅魍魎</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_9-MusicNameContainer"><span class="OSFillParent" data-expression="">とける（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_10-MusicNameContainer"><span class="OSFillParent" data-expression="">トロいか2000</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_11-MusicNameContainer"><span class="OSFillParent" data-expression="">ラ・モレーナ・クモナイ（裏）</span></div><div class="ListItem-TextForCommon ListItem-TextForIsNormal" data-container="" id="l6-19_1-l6-21_12-MusicNameContainer"><span class="OSFillParent" data-expression="">RAGING FIRE（裏）</span></div></div></div></div></div></div><div data-container="" id="l6-19_2-MainContainer" style="display: flex; flex-wrap: nowrap;"><div class="ListItem-Title OSInline" data-container="" style="text-align: center; width: 5%; float: left;"><span data-expression="">個人差
@@ -1005,13 +1068,12 @@ html.dn-user-theme #b2-MainContentWrapper #Lv10ListItem .ListItem-Title span
   else init();
 })();
 </script>
-
 <script id="dn-song-mobile-auto-fit">
 (function () {
   'use strict';
   const mobile = window.matchMedia('(max-width: 680px)');
   const tableId = 'Lv10ListItem';
-  const maxFont = 6.3;
+  const maxFont = 5.6;
   let scheduled = false;
   const chart = document.getElementById(tableId);
   if (!chart) return;
@@ -1020,7 +1082,7 @@ html.dn-user-theme #b2-MainContentWrapper #Lv10ListItem .ListItem-Title span
   if (!context) return;
 
   function measureAt(text, font, fontFamily) {
-    context.font = font + 'px ' + fontFamily;
+    context.font = '650 ' + font + 'px ' + fontFamily;
     return context.measureText(text).width;
   }
 
@@ -1056,7 +1118,7 @@ html.dn-user-theme #b2-MainContentWrapper #Lv10ListItem .ListItem-Title span
         parseFloat(computed.paddingRight || 0) - 1;
       if (available < 4) continue;
       const widest = widestPreview(label.textContent, getComputedStyle(label).fontFamily);
-      const size = widest > available ? Math.max(2.15, maxFont * available / widest * 0.975) : maxFont;
+      const size = widest > available ? Math.max(3.0, maxFont * available / widest * 0.975) : maxFont;
       label.style.setProperty('--dn-song-mobile-size', size.toFixed(2) + 'px');
     }
   }
