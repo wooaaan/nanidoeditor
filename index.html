@@ -21,7 +21,233 @@
         appendMetaTagAttributes("viewport", "content", ["user-scalable=no", "minimum-scale=1.0"]);
     }
 })();</script>
-<link href="https://hatahata.outsystemscloud.com/DonderNote/favicon.png" rel="shortcut icon" type="image/x-icon"/><title>全良難易度表</title><style id="dn-table-background-white">
+<link href="https://hatahata.outsystemscloud.com/DonderNote/favicon.png" rel="shortcut icon" type="image/x-icon"/><title>全良難易度表</title><style id="dn-original-theme-css">﻿/* ===================================================================== */
+/*  The following CSS was created using Theme Editor.                    */
+/*  To modify this CSS, click "Open Theme Editor".                       */
+/* ===================================================================== */
+
+/* ===================================================================== */
+/*  Root - CSS Variables                                                 */
+/* ===================================================================== */
+
+:root {
+	
+    /* Color - Brand */
+    --color-primary: #1f4788;
+    --color-secondary: #1f4788;
+
+    --color-primary-hover: #173566;
+    --color-primary-selected: rgba(31, 71, 136, .12);
+	
+    /* App Settings */
+    --color-background-body: #ffffff;
+    --color-background-login: #1f4788;
+    --header-color: #ffffff;
+	
+    /* Dark Theme */
+    --background-dark-theme: rgba(255, 255, 255, .1);
+    --background-dark-theme-hover: rgba(255, 255, 255, .2);
+}
+
+/* Login and Splash Color */
+
+.login-screen,
+.layout-native .login-screen {
+    background-color: var(--color-background-login);
+}
+
+.login-form,
+.tablet .layout-native .login-form {
+    background-color: var(--background-dark-theme);
+}
+
+.login-screen .animated-label-text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.splash-loading {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.splash-loading-bar {
+    background: var(--color-neutral-0);
+}
+
+.login-screen label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-form a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-screen [class*='text-neutral'] {
+    color: var(--color-neutral-0);
+}
+
+
+html{
+    font-family: Noto Sans JP,-apple-system,blinkmacsystemfont,Segoe UI,Hiragino Kaku Gothic ProN,BIZ UDPGothic,meiryo,sans-serif;
+} 
+
+.ContainerForm {
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.DonderNote-BackGround {
+    background-color: #bbdbf3;
+    border-radius: 10px;
+}
+
+.DonderNote-BackGround-Gray {
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+.DonderNote-BackGround-Yellow {
+    background-color: #ffffc6;
+    border-radius: 10px;
+}
+
+.RightContent {
+    text-align: right;
+    float: right;   
+}
+
+/***ラベル系***/
+.DonderNote-Text-Large {
+    font-size: 20px;
+    color: #1e50a2;
+    font-weight: bolder;
+}
+
+.DonderNote-Text-Mid {
+    /*フォント系*/
+    font-size: 15px;
+    color: #1e50a2;
+}
+
+.DonderNote-Text-Small {
+    /*フォント系*/
+    font-size: 10px;
+    color: #1e50a2;
+}
+
+.DonderNote-Text-Red {
+    color: #ff7f7f;
+}
+
+.DonderNote-Text-White {
+    color: #fff;
+}
+
+.DonderNote-HighLight {
+    color: #ff7f7f;
+    background: linear-gradient(transparent 20%, #ffff7f 0%);
+}
+
+.DonderNote-Mandatory {
+    font-size: 15px;
+    color: #ff7f7f;
+}
+
+.DonderNote-Url {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+/*位置調整系*/
+.DonderNote-VerticalMiddle{
+  display: inline-block;
+  vertical-align: middle; 
+}
+
+.DonderNote-Right {
+  margin: 0 0 0 auto;
+}
+
+.DonderNote-Footer{
+    position: absolute;
+    bottom: 0;
+}
+
+/***枠系***/
+.Item {
+    margin: 2px;
+    padding: 5px;
+    /*フォント系*/
+    font-weight: bolder;
+    color: #1e50a2;
+    /*背景*/
+    background: #ffffff;
+    /*枠線系*/
+    border: 0.001px solid;
+    border-color: #1e50a2;
+    border-radius: 5px;
+}
+
+/***全良難易度系***/
+.ListItem {
+    /*フォント系*/
+    font-size: 4px;
+    font-weight: bolder;
+    color: #1e50a2;
+    /*背景*/
+    background: #eff7ff;
+    /*枠線系*/
+    border: 0.0000000001px solid;
+    border-color: #1e50a2;
+}
+
+.ListItem-Gallary{
+    margin: 0.5px;
+}
+
+.ListItem-Title {
+    margin: 0.5px;
+    /*フォント系*/
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 0.3em;
+    /*背景*/
+    background: #1e50a2;
+}
+
+.ListItem-TextForCommon{
+    /*フォント系*/
+    padding: 0.25px;
+    word-break: break-all;
+    font-family: "メイリオ",arial, sans-serif;
+    /*枠線系*/
+    border: 0.00001px solid;
+    border-color: #1e50a2;
+    margin: 0.25px;
+}
+
+.ListItem-TextForIsNormal{
+    background-color: #ffffff;
+}
+.ListItem-TextForIsAP{
+    background-color: #00ffff;
+}
+.ListItem-TextForKaAri{
+    background-color: #aaffaa;
+}
+.ListItem-TextForFullComb{
+    background-color: #ffffaa;
+    /* background-color: #f4d63b;*/
+}
+.ListItem-TextForClear{
+    background-color: #cccccc;
+    /* background-color: #9fb5b7;*/
+}
+.ListItem-TextForIsDelete{
+    color: #FFF;
+    background-color: #696969;
+}</style><style id="dn-table-background-white">
 /* Only the difficulty table's faint blue base fill changes to white.
    The lane title colors and the existing marked-song/status fills stay as-is. */
 #MainDataContainer,
@@ -41,8 +267,8 @@
    This does not change the page structure or the editing feature UI. */
 *,*::before,*::after{box-sizing:border-box}
 html,body{margin:0;padding:0;background:#fff}
-body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
-color:#243b5f;font-size:14px;line-height:1.5}
+body{font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN","BIZ UDPGothic",Meiryo,sans-serif;
+color:#1e50a2;font-size:14px;line-height:1.5}
 [hidden]{display:none!important}
 .skip-nav,.app-menu-overlay,.header-logo,.menu-icon,.btn-loading,#donder-csv-tool-root,
 #b2-Breadcrumbs,#b2-Title,#b2-Actions,#b2-Header{display:none!important}
@@ -65,26 +291,26 @@ border:1px solid #e2edf1}
 #UpdateBottonContainer{margin:0!important}
 button,select{font:inherit;cursor:pointer}
 button:disabled{cursor:default;opacity:.5}
-.btn{display:inline-block;padding:7px 11px;background:#fff;color:#243b5f;
+.btn{display:inline-block;padding:7px 11px;background:#fff;color:#1e50a2;
 border:1px solid #243b5f;border-radius:3px;font-size:12px}
 .btn-primary{background:#253d61;color:#fff}
 .button-group>div{display:inline-flex;vertical-align:middle}
 .button-group-item{font-size:12px;line-height:1.3;padding:8px 12px;
-border:1px solid #243b5f;background:#fff;color:#243b5f}
+border:1px solid #243b5f;background:#fff;color:#1e50a2}
 .button-group-item+ .button-group-item{margin-left:-1px}
 .button-group-selected-item{color:#fff;background:#243b5f}
 #MainDataContainer,#APListContainer,#Lv10ListItem{background:#fff}
 #MainDataContainer{padding:0;margin:0}
-#lblTitleForAPList{font-weight:700;color:#20385c}
+#lblTitleForAPList{font-weight:700;color:#1e50a2}
 #DateContainer{float:right}
 #APListContainer{clear:both;padding-top:5px}
 #Lv10ListItem{width:100%;overflow:visible!important;font-size:10px;position:relative}
 #Lv10ListItem > [id$="-MainContainer"]{display:flex!important;flex-wrap:nowrap!important;
 align-items:stretch;margin:0;padding:0}
 #Lv10ListItem .ListItem-Title{width:5%;min-width:0;display:flex;align-items:center;
-justify-content:center;flex-shrink:0;min-height:29px;background-color:#263e64;color:#fff;
+justify-content:center;flex-shrink:0;min-height:29px;background-color:#1e50a2;color:#fff;
 text-align:center;white-space:pre-line;line-height:1.35;
-border:1px solid #263e64}
+border:1px solid #1e50a2}
 #Lv10ListItem .ListItem-Gallary{width:95%;min-width:0;float:none!important;background:#fff}
 #Lv10ListItem .OSBlockWidget,
 #Lv10ListItem .grid-gallery{width:100%}
@@ -92,10 +318,10 @@ border:1px solid #263e64}
 gap:0!important;overflow:visible!important;white-space:normal!important;min-height:29px;background:#fff}
 #Lv10ListItem .ListItem-TextForCommon{display:flex;justify-content:center;align-items:center;
 text-align:center;min-width:0;min-height:29px;overflow-wrap:anywhere;word-break:break-word;
-padding:3px 2px;line-height:1.3;font-weight:400;color:#243b5f;
-border:1px solid #263e64}
+padding:3px 2px;line-height:1.3;font-weight:400;color:#1e50a2;
+border:1px solid #1e50a2}
 #Lv10ListItem .ListItem-TextForIsNormal{background:#fff}
-#Lv10ListItem .ListItem-TextForIsAP{background:#ffdf59}
+#Lv10ListItem .ListItem-TextForIsAP{background:#00ffff}
 #Lv10ListItem .ListItem-TextForCommon span{display:block;max-width:100%}
 @media(max-width:680px){
 .header-content{padding:8px}
@@ -183,7 +409,7 @@ border:1px solid #263e64}
     font-weight: 700;
     line-height: 1.25;
     /* Restore visible row bounds, without doubling adjacent borders. */
-    border: 1px solid #3169b6;
+    border: 1px solid #1e50a2;
   }
   #Lv10ListItem .ListItem-Gallary {
     width: 94.5% !important;
@@ -192,17 +418,17 @@ border:1px solid #263e64}
   #Lv10ListItem .list-group {
     grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
     background: #fff;
-    border-top: 1px solid #3169b6;
-    border-left: 1px solid #3169b6;
+    border-top: 1px solid #1e50a2;
+    border-left: 1px solid #1e50a2;
     min-height: 21px;
   }
   #Lv10ListItem .ListItem-TextForCommon {
     min-height: 21px !important;
     padding: 1px 0 !important;
     border: 0 !important;
-    border-right: 1px solid #3169b6 !important;
-    border-bottom: 1px solid #3169b6 !important;
-    color: #2156a3;
+    border-right: 1px solid #1e50a2 !important;
+    border-bottom: 1px solid #1e50a2 !important;
+    color: #1e50a2;
     font-weight: 650;
     line-height: 1.16 !important;
     align-items: flex-start;
